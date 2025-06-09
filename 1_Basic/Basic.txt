@@ -1,0 +1,57 @@
+React:
+    React ek UI library hai, jo user interface banane mein help karti hai.
+    UI banata hai
+    Local state hota hai
+
+    React = Dikhaane ka kaam karta hai (View).
+
+Redux:
+    Redux ek state management library hai, jo tumhare data ko sambhalta hai.
+    Data sambhalta hai.
+    Global state hota hai.
+
+    Redux = Data ka thekedar hai (Store + Logic).
+    Redux is completely independent of react.
+    Redux is an topic from itself.
+
+    Important:
+        Agar maine ek jagah koi kaam kiya (jaise value update), aur mujhe chaahta hoon ki woh change 10 alag-alag components mein reflect ho, toh Redux best hai.
+        Redux is highly useful when a single state change needs to reflect across multiple components in different parts of the application, ensuring consistent and centralized state management.
+
+
+
+Example:
+    React se ek Counter bana raha hai.
+        React mai + button dabao aur number dikhata hai.
+        Redux se counter ki value global store mein rakhta hai, taki dusre pages pe bhi use kiya ja sake.
+
+
+
+We prefer Redux Toolkit:
+    Redux Toolkit ek official package hai jo Redux ko:
+    ✅ Easy
+    ✅ Less boilerplate (kam likhna padta hai)
+    ✅ Faster banata hai.
+
+    
+    Iska kaam hai Redux setup ko shortcut banake dena, taaki hamme manually:
+    store banana
+    reducers likhna
+    actions banana  ...ye sab hand se na karna pade
+
+
+Store – "Data Bank":
+    Store Redux ka central container hota hai.
+    Isme poori app ka data/state rehta hai.
+
+Reducer – "Kaam karne wala (Logic)":
+    Reducer ek function hota hai jo store ka data update karta hai,
+    — lekin kaise? kisi action ke basis pe.
+
+Action – "Kaam bolne wala (Order)":
+    Action ek JavaScript object hota hai jo batata hai -> "Kya kaam karna hai?"
+
+
+
+Installation:
+    https://redux-toolkit.js.org/introduction/getting-started
